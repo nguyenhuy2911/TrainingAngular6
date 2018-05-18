@@ -1,0 +1,26 @@
+<div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">        
+        <form class="form-signin">
+            <div class="form-group row">
+                <label for="userName" class="col-sm-3 col-form-label">UserName</label>
+                <div class="col-sm-9">
+                    <input #userName type="text" class="form-control" required placeholder="username" />
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="passWord" class="col-sm-3 col-form-label">Password</label>
+                <div class="col-sm-9">
+                    <input #passWord type="password" class="form-control" required placeholder="password" />
+                </div>
+            </div>
+            <label> {{errorMess}}</label>
+            <div class="form-group row text-right">
+                <div class="col-sm-12">
+                    <input type="submit" class="btn btn-primary" value="Login" (click)="login(userName.value, passWord.value)" />
+                </div>
+            </div>
+        </form>
+
+    </div>
+</div>
+

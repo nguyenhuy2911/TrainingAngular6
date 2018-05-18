@@ -1,0 +1,83 @@
+<div class="row justify-content-md-center">
+    <div class="{{alertclass}}" [innerHTML]="errMessage" role="alert"></div>
+</div>
+<div class="row justify-content-md-center">
+
+        <div class="col-md-6 col-sm-6 col-xs-12">
+            <a routerLink="/post/add" class="btn btn-primary mt-5">Create Post</a>
+        </div>
+
+        <div class="col-sm-8" *ngFor="let post of posts">
+            <div class="panel panel-white post panel-shadow">
+                <div class="post-heading">
+                    <div class="float-left image">
+                        <img src="http://bootdey.com/img/Content/user_1.jpg" class="img-circle avatar" alt="user profile image">
+                    </div>
+                    <div class="float-left meta">
+                        <div class="title h5">
+                            <a href="#"><b>{{post?.User?.FullName}}</b></a> made a post.
+                        </div>
+                        <h6 class="text-muted time">{{post.CreateDate | date: 'fullDate'}}</h6>
+                    </div>
+                </div>
+                <div class="post-description">
+                    <h6>{{post.Title}}</h6>
+                    <p>{{post.Description}}</p>
+
+                </div>
+                <div class="post-footer">
+                    <!--<div class="input-group">
+                        <input class="form-control" placeholder="Add a comment" type="text">
+                        <span class="input-group-addon">
+                            <a href="#"><i class="fa fa-edit"></i></a>
+                        </span>
+                    </div>-->
+                    <ul class="comments-list">
+                        <li class="comment">
+                            <a class="float-left" href="#">
+                                <img class="avatar" src="http://bootdey.com/img/Content/user_1.jpg" alt="avatar">
+                            </a>
+                            <div class="comment-body">
+                                <div class="comment-heading">
+                                    <h4 class="user">Gavino Free</h4>
+                                    <h5 class="time">5 minutes ago</h5>
+                                </div>
+                                <p>Sure, oooooooooooooooohhhhhhhhhhhhhhhh</p>
+                            </div>
+                            <ul class="comments-list">
+                                <li class="comment">
+                                    <a class="float-left" href="#">
+                                        <img class="avatar" src="http://bootdey.com/img/Content/user_3.jpg" alt="avatar">
+                                    </a>
+                                    <div class="comment-body">
+                                        <div class="comment-heading">
+                                            <h4 class="user">Ryan Haywood</h4>
+                                            <h5 class="time">3 minutes ago</h5>
+                                        </div>
+                                        <p>Relax my friend</p>
+                                    </div>
+                                </li>
+                                <li class="comment">
+                                    <a class="float-left" href="#">
+                                        <img class="avatar" src="http://bootdey.com/img/Content/user_2.jpg" alt="avatar">
+                                    </a>
+                                    <div class="comment-body">
+                                        <div class="comment-heading">
+                                            <h4 class="user">Gavino Free</h4>
+                                            <h5 class="time">3 minutes ago</h5>
+                                        </div>
+                                        <p>Ok, cool.</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+
+
+</div>
+

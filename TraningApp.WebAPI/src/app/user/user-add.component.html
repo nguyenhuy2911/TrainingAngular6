@@ -1,0 +1,50 @@
+<div class="row justify-content-md-center">
+    <div class="col-md-6 col-sm-6 col-xs-12">
+        <h2>Create User</h2>
+        <div class="{{alertclass}}" [innerHTML]="errorMess" role="alert"></div>
+        <form [formGroup]="form" (ngSubmit)="onSubmit()">
+            <div class="form-group">
+                <label class="control-label">User Name</label>
+                <input type="text" class="form-control" formControlName="userName" />
+                <div *ngIf="form.controls['userName'].invalid && (form.controls['userName'].dirty || form.controls['userName'].touched)">
+                    <div *ngIf="form.controls['userName'].errors">
+                        <div class="text-danger" [hidden]="!form.controls['userName'].errors.required">User name is required.</div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="form-group">
+                <label class="control-label">Display Name</label>
+                <input type="text" class="form-control" formControlName="displayName" />
+                <div *ngIf="form.controls['displayName'].invalid && (form.controls['displayName'].dirty || form.controls['displayName'].touched)">
+                    <div *ngIf="form.controls['displayName'].errors">
+                        <div class="text-danger" [hidden]="!form.controls['displayName'].errors.required">DisplayName is required.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label">Password</label>
+                <input type="password" class="form-control" formControlName="passWord" />
+                <div *ngIf="form.controls['passWord'].invalid && (form.controls['passWord'].dirty || form.controls['passWord'].touched)">
+                    <div *ngIf="form.controls['passWord'].errors">
+                        <div class="text-danger" [hidden]="!form.controls['passWord'].errors.required">password is required.</div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="form-group">
+                <label class="control-label">Re-Password</label>
+                <input type="password" class="form-control" formControlName="rePassword" />
+                <div *ngIf="form.controls['rePassword'].invalid && (form.controls['rePassword'].dirty || form.controls['rePassword'].touched)">
+                    <div *ngIf="form.controls['rePassword'].errors">
+                        <div class="text-danger" [hidden]="!form.controls['rePassword'].errors.required">Re-Password is required.</div>
+                        <div class="text-danger" [hidden]="form.controls['rePassword'].errors.comparepassword">Re-password not equal password.</div>
+                    </div>
+                </div>
+            </div>
+            <input type="submit" class="btn btn-primary mr-3" value="Save" [disabled]="!form.valid" />
+            <input type="reset" class="btn btn-default" value="Reset" />
+        </form>
+    </div>
+</div>
+

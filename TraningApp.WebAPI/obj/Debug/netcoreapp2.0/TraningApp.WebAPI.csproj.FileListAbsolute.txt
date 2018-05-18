@@ -1,0 +1,11 @@
+C:\Users\huynguyen\source\repos\TrainingApp\TraningApp.WebAPI\obj\Debug\netcoreapp2.0\TraningApp.WebAPI.csproj.CoreCompileInputs.cache
+C:\Users\huynguyen\source\repos\TrainingApp\TraningApp.WebAPI\obj\Debug\netcoreapp2.0\TraningApp.WebAPI.AssemblyInfoInputs.cache
+C:\Users\huynguyen\source\repos\TrainingApp\TraningApp.WebAPI\obj\Debug\netcoreapp2.0\TraningApp.WebAPI.AssemblyInfo.cs
+C:\Users\huynguyen\source\repos\TrainingApp\TraningApp.WebAPI\bin\Debug\netcoreapp2.0\TraningApp.WebAPI.deps.json
+C:\Users\huynguyen\source\repos\TrainingApp\TraningApp.WebAPI\bin\Debug\netcoreapp2.0\TraningApp.WebAPI.runtimeconfig.json
+C:\Users\huynguyen\source\repos\TrainingApp\TraningApp.WebAPI\bin\Debug\netcoreapp2.0\TraningApp.WebAPI.runtimeconfig.dev.json
+C:\Users\huynguyen\source\repos\TrainingApp\TraningApp.WebAPI\bin\Debug\netcoreapp2.0\TraningApp.WebAPI.dll
+C:\Users\huynguyen\source\repos\TrainingApp\TraningApp.WebAPI\bin\Debug\netcoreapp2.0\TraningApp.WebAPI.pdb
+C:\Users\huynguyen\source\repos\TrainingApp\TraningApp.WebAPI\obj\Debug\netcoreapp2.0\TraningApp.WebAPI.dll
+C:\Users\huynguyen\source\repos\TrainingApp\TraningApp.WebAPI\obj\Debug\netcoreapp2.0\TraningApp.WebAPI.pdb
+C:\Users\huynguyen\source\repos\TrainingApp\TraningApp.WebAPI\obj\Debug\netcoreapp2.0\TraningApp.WebAPI.csprojResolveAssemblyReference.cache
